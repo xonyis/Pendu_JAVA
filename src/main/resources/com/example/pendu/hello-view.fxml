@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pendu.HelloController">
+   <children>
+      <TextField fx:id="responseInput" layoutX="344.0" layoutY="92.0" />
+      <Text fx:id="wordDisplay" layoutX="341.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Text>
+      <Button layoutX="344.0" layoutY="144.0" mnemonicParsing="false" onAction="#getTextInput" text="Submit" />
+      <Text fx:id="txt" layoutX="345.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Votre réponse" />
+      <Text fx:id="penduText" layoutX="101.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Monospaced Regular" size="30.0" />
+         </font></Text>
+      <Text fx:id="resultText" layoutX="272.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="275.0" layoutY="337.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
+   </children>
+</AnchorPane>
